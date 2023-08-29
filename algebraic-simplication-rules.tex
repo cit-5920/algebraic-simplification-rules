@@ -1,0 +1,164 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{xcolor}
+\geometry{a4paper}
+
+% Define color theme
+\definecolor{factorA}{RGB}{0,128,0} % Green
+\definecolor{factorB}{RGB}{0,0,255} % Blue
+\definecolor{operator}{RGB}{128,0,128} % Purple
+\definecolor{alternate}{RGB}{255,0,0} % Red
+
+\title{Algebraic Simplification Rules}
+\author{Jérémie O. Lumbroso}
+\date{August 26, 2023}
+
+\begin{document}
+\maketitle
+
+\section*{1. Combining Like Terms}
+When you have terms that look the same, you can add or subtract them together.
+\begin{align*}
+    {\color{factorA}3}x {\color{operator}+} {\color{factorA}4}x & = ({\color{factorA}3 {\color{operator}+} 4})x = {\color{factorA}7}x \\
+    {\color{factorA}5}y {\color{operator}-} {\color{factorA}2}y & = ({\color{factorA}5 {\color{operator}-} 2})y = {\color{factorA}3}y \\
+    {\color{factorA}6}a {\color{operator}+} {\color{factorA}2}a {\color{operator}-} {\color{factorA}4}a & = ({\color{factorA}6 {\color{operator}+} 2 {\color{operator}-} 4})a = {\color{factorA}4}a
+\end{align*}
+\textbf{Note:} This rule is derived from the distributive property of multiplication over addition.
+
+\section*{2. Distributive Property}
+When you multiply a number outside of a bracket with terms inside the bracket, you multiply that number with each term inside.
+\begin{align*}
+    3({\color{factorA}x} {\color{operator}+} {\color{factorB}y}) & = 3{\color{factorA}x} + 3{\color{factorB}y} \\
+    4({\color{factorA}2z} {\color{operator}-} {\color{factorB}3}) & = 4{\color{factorA}z} - {\color{factorB}12} \\
+    5({\color{factorA}a} {\color{operator}-} {\color{factorB}b} {\color{operator}+} {\color{alternate}c}) & = 5{\color{factorA}a} - 5{\color{factorB}b} + 5{\color{alternate}c}
+\end{align*}
+\textbf{Note:} This rule is a direct application of the distributive property of multiplication over addition: \(a(b + c) = ab + ac\).
+
+\section*{3. Multiplying Powers with the Same Base}
+When you multiply numbers with the same base and different powers, you add the powers together.
+\begin{align*}
+    x^{{\color{factorA}2}} \times x^{{\color{factorB}3}} & = x^{{\color{factorA}2} {\color{operator}+} {\color{factorB}3}} = x^{{\color{alternate}5}} \\
+    y^{{\color{factorA}4}} \times y^{{\color{factorB}2}} & = y^{{\color{factorA}4} {\color{operator}+} {\color{factorB}2}} = y^{{\color{alternate}6}} \\
+    z^{{\color{factorA}3}} \times z^{{\color{factorB}7}} & = z^{{\color{factorA}3} {\color{operator}+} {\color{factorB}7}} = z^{{\color{alternate}10}}
+\end{align*}
+\textbf{Note:} This rule is derived from the properties of exponents: \(a^m \times a^n = a^{m+n}\).
+
+\section*{4. Dividing Powers with the Same Base}
+When you divide numbers with the same base and different powers, you subtract the powers.
+\begin{align*}
+    \frac{x^{{\color{factorA}5}}}{x^{{\color{factorB}2}}} & = x^{{\color{factorA}5} {\color{operator}-} {\color{factorB}2}} = x^{{\color{alternate}3}} \\
+    \frac{y^{{\color{factorA}6}}}{y^{{\color{factorB}3}}} & = y^{{\color{factorA}6} {\color{operator}-} {\color{factorB}3}} = y^{{\color{alternate}3}} \\
+    \frac{z^{{\color{factorA}8}}}{z^{{\color{factorB}3}}} & = z^{{\color{factorA}8} {\color{operator}-} {\color{factorB}3}} = z^{{\color{alternate}5}}
+\end{align*}
+\textbf{Note:} This rule is derived from the properties of exponents: \(\frac{a^m}{a^n} = a^{m-n}\).
+
+
+\section*{5. Power of a Power}
+When you have a power raised to another power, you multiply the powers.
+\begin{align*}
+    (x^{{\color{factorA}2}})^{{\color{factorB}3}} & = x^{{\color{factorA}2} {\color{operator}\times} {\color{factorB}3}} = x^{{\color{alternate}6}} \\
+    (y^{{\color{factorA}3}})^{{\color{factorB}4}} & = y^{{\color{factorA}3} {\color{operator}\times} {\color{factorB}4}} = y^{{\color{alternate}12}} \\
+    (z^{{\color{factorA}4}})^{{\color{factorB}2}} & = z^{{\color{factorA}4} {\color{operator}\times} {\color{factorB}2}} = z^{{\color{alternate}8}}
+\end{align*}
+\textbf{Note:} This rule is derived from the properties of exponents: \((a^m)^n = a^{m \times n}\).
+
+\section*{6. Zero Exponent Rule}
+Any number (except zero) raised to the power of zero is always 1.
+\begin{align*}
+    x^{{\color{operator}0}} & = {\color{alternate}1} \\
+    5^{{\color{operator}0}} & = {\color{alternate}1} \\
+    a^{{\color{operator}0}} & = {\color{alternate}1}
+\end{align*}
+\textbf{Note:} This rule is derived from the properties of exponents: \(a^0 = 1\) for all \(a \not= 0\).
+
+\section*{7. Negative Exponent Rule}
+A number with a negative exponent becomes a fraction with a positive exponent in the denominator.
+\begin{align*}
+    x^{{\color{operator}-2}} & = \frac{1}{x^{{\color{factorA}2}}} \\
+    y^{{\color{operator}-3}} & = \frac{1}{y^{{\color{factorA}3}}} \\
+    2^{{\color{operator}-4}} & = \frac{1}{2^{{\color{factorA}4}}}
+\end{align*}
+\textbf{Note:} This rule is derived from the properties of exponents: \(a^{-n} = \frac{1}{a^n}\) for all \(a \not= 0\).
+
+\section*{8. Factorization}
+Breaking down a number or expression into its simplest parts (factors) that, when multiplied, give the original number or expression.
+\begin{align*}
+    12 & = {\color{factorA}3} \times {\color{factorB}4} \\
+    x^2 - 9 & = (x {\color{operator}+} {\color{factorA}3})(x {\color{operator}-} {\color{factorB}3}) \\
+    y^2 + 2y + 1 & = (y {\color{operator}+} {\color{factorA}1})(y {\color{operator}+} {\color{factorB}1})
+\end{align*}
+\textbf{Note:} This rule is derived from the properties of algebraic expressions. For instance, \(a^2 - b^2 = (a+b)(a-b)\) and \((a+b)^2 = a^2 + 2ab + b^2\).
+
+
+\newpage
+
+\section*{Practice Exercises}
+
+\subsection*{Combining Like Terms}
+\begin{enumerate}
+    \item Simplify: \(2m + 5m\)
+    \item Simplify: \(7n - 3n + 2n\)
+    \item Simplify: \(4p - p\)
+    \item Simplify: \(9q + q - 5q\)
+\end{enumerate}
+
+\subsection*{Distributive Property}
+\begin{enumerate}
+    \item Expand: \(2(x + 3)\)
+    \item Expand: \(3(2y - 4)\)
+    \item Expand: \(4(z + 2 - z)\)
+    \item Expand: \(5(a - b + 2c)\)
+\end{enumerate}
+
+\subsection*{Multiplying Powers with the Same Base}
+\begin{enumerate}
+    \item Simplify: \(x^2 \times x^3\)
+    \item Simplify: \(y^4 \times y^2\)
+    \item Simplify: \(z^3 \times z^7\)
+    \item Simplify: \(a^5 \times a^2\)
+\end{enumerate}
+
+\subsection*{Dividing Powers with the Same Base}
+\begin{enumerate}
+    \item Simplify: \(\frac{x^5}{x^2}\)
+    \item Simplify: \(\frac{y^6}{y^3}\)
+    \item Simplify: \(\frac{z^8}{z^3}\)
+    \item Simplify: \(\frac{a^7}{a^4}\)
+\end{enumerate}
+\subsection*{Power of a Power}
+\begin{enumerate}
+    \item Simplify: \((x^2)^3\)
+    \item Simplify: \((y^3)^4\)
+    \item Simplify: \((z^4)^2\)
+    \item Simplify: \((a^5)^2\)
+\end{enumerate}
+
+\subsection*{Zero Exponent Rule}
+\begin{enumerate}
+    \item Simplify: \(x^0\)
+    \item Simplify: \(5^0\)
+    \item Simplify: \(a^0\)
+    \item Simplify: \(b^0\)
+\end{enumerate}
+
+\subsection*{Negative Exponent Rule}
+\begin{enumerate}
+    \item Simplify: \(x^{-2}\)
+    \item Simplify: \(y^{-3}\)
+    \item Simplify: \(2^{-4}\)
+    \item Simplify: \(a^{-5}\)
+\end{enumerate}
+
+\subsection*{Factorization}
+\begin{enumerate}
+    \item Factorize: \(x^2 - 9\)
+    \item Factorize: \(y^2 + 2y + 1\)
+    \item Factorize: \(z^2 - 4\)
+    \item Factorize: \(a^2 - 16\)
+\end{enumerate}
+
+
+\end{document}
