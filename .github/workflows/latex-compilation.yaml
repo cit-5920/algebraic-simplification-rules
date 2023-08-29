@@ -16,7 +16,7 @@ jobs:
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
 
       - name: 🛠️ Compile LaTeX Source
-        uses: xu-cheng/latex-action@v2
+        uses: xu-cheng/latex-action@v3.0.1
         with:
           root_file: "*.tex"
           glob_root_file: true
