@@ -1,0 +1,46 @@
+# .gitignore for LaTeX
+# Last updated: 2023-VIII-28
+# Author: Jérémie Lumbroso
+
+# LaTeX temporary files
+*.aux
+*.bbl
+*.blg
+*.brf
+*.cb
+*.ind
+*.idx
+*.ilg
+*.inx
+*.log
+*.out
+*.toc
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.ist
+*.fls
+*.fdb_latexmk
+*.snm
+*.nav
+*.synctex.gz
+*.run.xml
+*.bcf
+
+# Overleaf files
+.overleaf*
+*.synctex(busy)
+
+# Backup files
+*~
+*.bak
+*.old
+*.backup
+
+# Other
+.DS_Store  # For Mac users
+._*         # For Mac users
+Thumbs.db   # For Windows users
